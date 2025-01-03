@@ -1,0 +1,69 @@
+/* Base styling for the entire page */
+html, body {
+    height: 100%; /* Ensures full height for flex layout */
+    margin: 0; /* Removes default margin around the page */
+    padding: 0; /* Removes default padding */
+    display: flex; /* Enables flexbox layout */
+    flex-direction: column; /* Arranges body contents vertically */
+    font-family: Arial, sans-serif; /* Sets the font style for the page */
+    background-color: #f0f2f5; /* Light background color for the page */
+}
+
+/* Styling for the header section */
+header {
+    background-color: #0033cc; /* Dark blue background for the header */
+    color: white; /* White text color for the header */
+    padding: 15px 0; /* Vertical padding for spacing inside the header */
+    text-align: center; /* Centers the header text */
+}
+
+/* Styling for list items inside unordered lists */
+ul li {
+    margin-bottom: 10px;  /* Adds space between list items */
+    line-height: 1.6;     /* Adjusts line spacing for better readability */
+}
+
+/* Styling for navigation menu inside header */
+nav ul {
+    list-style-type: none; /* Removes default bullet points from list */
+    padding: 0; /* Removes default padding */
+}
+
+/* Styling for each navigation link item */
+nav ul li {
+    display: inline; /* Displays list items in a horizontal row */
+    margin-right: 20px; /* Adds space between the navigation links */
+}
+
+/* Styling for the links in the navigation menu */
+nav ul li a {
+    color: #ffffff; /* White text color for the links */
+    text-decoration: none; /* Removes underline from the links */
+    font-weight: bold; /* Makes the link text bold */
+}
+
+/* Hover effect for the navigation links */
+nav ul li a:hover {
+    color: #0055ff; /* Changes text color to a lighter blue when hovered */
+}
+
+/* Main content section styling */
+main {
+    flex: 1; /* Allows main content to take up remaining space */
+    padding: 30px; /* Adds padding around the main content for spacing */
+    text-align: center; /* Centers the text in the main content area */
+    color: #2e2e2e; /* Dark grey text color for better contrast */
+}
+
+/* Styling for the footer section */
+footer {
+    background-color: #0033cc; /* Dark blue background for the footer */
+    color: white; /* White text color for the footer */
+    text-align: center; /* Centers the footer text */
+    padding: 15px 0; /* Vertical padding for spacing inside the footer */
+    width: 100%; /* Ensures the footer spans the full width of the page */
+    /* Removed margin-top to ensure footer sticks to the bottom */
+}
+
+
+

@@ -1,0 +1,70 @@
+/* Carousel Container Styling */
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Adjust this width as needed */
+    margin: auto;
+    overflow: hidden; /* Ensures only one slide is visible at a time */
+}
+
+/* Carousel Slides Container */
+.carousel-slides {
+    display: flex;
+    transition: transform 0.5s ease; /* Smooth transition when moving slides */
+}
+
+/* Individual Slide Styling */
+.carousel-slide {
+    flex-basis: 100%; /* Each slide takes up the full width of the carousel container */
+    flex-shrink: 0; /* Prevent slides from shrinking */
+}
+
+/* Full width of each carousel image */
+.carousel-slide img {
+    width: 100%; /* Ensure each image fills the slide container */
+    display: block; /* Remove any spacing below images */
+}
+
+/* Styling for carousel navigation controls */
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 5px;
+    border: none;
+    outline: none;
+}
+
+/* Position for previous and next buttons */
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Carousel dot navigation */
+.carousel-dots {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dot.active {
+    background-color: #717171;
+}

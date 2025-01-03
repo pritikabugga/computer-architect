@@ -1,0 +1,51 @@
+/* Additional Styling for Expertise Page */
+#expertise-page {
+    text-align: center;
+    padding: 20px;
+}
+
+#topicsList {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+#topicsList div {
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: left;
+}
+
+#topicsList h3 {
+    margin-top: 0;
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+}
+
+/* Style the section's list items to match the header/footer color */
+section ul li {
+    color: #0033cc; /* Same blue as the header/footer */
+    font-weight: bold; /* To maintain the emphasis */
+}
+
+/* Sticky footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #0033cc; /* Adjust to match your footer color */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    z-index: 1000; /* Ensure it stays above the background overlay */
+}
+
+

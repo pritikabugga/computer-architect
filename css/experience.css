@@ -1,0 +1,91 @@
+/* Global Setup for Sticky Footer Layout */
+body, html {
+    height: 100%; /* Full viewport height for sticky footer layout */
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Column layout to keep footer at the bottom */
+    font-family: Arial, sans-serif; /* Set a default font for consistency */
+}
+
+/* Main Content Area Setup */
+#experience-page {
+    flex-grow: 1; /* Expands to fill available space */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px; /* Adds space above footer */
+    background-color: #f5f5f5; /* Light gray background for better contrast */
+    overflow: hidden; /* Prevents content overflow from affecting layout */
+}
+
+/* Center the container holding the image and caption */
+.experience-container {
+    text-align: center;
+    margin: 20px 0; /* Adds vertical spacing */
+}
+
+/* Center the image within the experience section */
+.experience img {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Style for the caption under the image */
+.experience p {
+    margin-top: 10px;
+    font-style: italic;
+    color: #333; /* Dark gray text for better readability */
+}
+
+/* Accordion Styling */
+
+/* Wrapper for Accordion with Scroll Control */
+.accordion-wrapper {
+    width: 100%;
+    max-width: 800px; /* Restrict accordion width for readability */
+    flex-grow: 1; /* Makes accordion take up available vertical space */
+    overflow-y: auto; /* Adds scrolling for the accordion content */
+    max-height: calc(100vh - 200px); /* Adjusts height to prevent pushing footer */
+    padding: 10px; /* Adds padding for spacing */
+    box-sizing: border-box; /* Includes padding in height calculation */
+}
+
+/* Styling for each accordion header */
+#accordion h3 {
+    background-color: #0033cc; /* Dark blue header background */
+    color: white;
+    padding: 10px;
+    cursor: pointer; /* Pointer cursor for clickable effect */
+    margin: 0;
+    font-size: 16px; /* Adjust font size for headers */
+    border: 1px solid #ccc; /* Adds a subtle border for better definition */
+}
+
+/* Hover effect for accordion headers */
+#accordion h3:hover {
+    background-color: #0055ff; /* Hover effect for visual feedback */
+}
+
+/* Styling for the content inside each accordion panel */
+#accordion div {
+    padding: 15px; /* Adds padding for readability */
+    background-color: white;
+    color: #2e2e2e; /* Darker text color for readability */
+    border-top: 1px solid #ccc; /* Border between sections */
+}
+
+/* Remove or reduce margin below accordion */
+#accordion {
+    margin-bottom: 0;
+}
+
+/* Footer Styling */
+#main-footer {
+    background-color: #0033cc;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+    margin-top: auto; /* Ensures footer stays at the bottom */
+    position: relative; /* Keeps it relative to the page flow */
+}

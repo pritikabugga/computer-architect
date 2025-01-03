@@ -1,0 +1,30 @@
+/* Styling for the form section */
+form {
+    margin-top: 25px; 
+    text-align: left; 
+    display: inline-block; 
+}
+
+/* Styling for text inputs, email inputs, and text areas in the form */
+input[type="text"], input[type="email"], textarea {
+    width: 100%; 
+    padding: 10px; 
+    margin: 10px 0; /* Adds vertical spacing between input fields */
+    border: 1px solid #bdc3c7; /* Light grey border for input fields */
+    border-radius: 5px; 
+}
+
+/* Styling for the submit button */
+button {
+    background-color: #0033cc; /* Dark blue background for the button */
+    color: white; /* White text color for the button */
+    padding: 10px 20px; 
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer; /* Changes the cursor to a pointer when hovered */
+}
+
+/* Hover effect for the submit button */
+button:hover {
+    background-color: #0055ff; /* Changes button background color to lighter blue when hovered */
+}

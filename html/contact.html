@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Information and Page Title -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - A Look into a Software Architect</title>
+    <link rel="stylesheet" href="../css/style.css"> <!-- Link to external stylesheet for all html files -->
+    <link rel="stylesheet" href="../css/contact.css"> <!-- Link to specific style sheet for contact.html -->
+
+    <!-- Link to External JavaScript File for AJAX Form Submission -->
+    <script src="../js/contact.js"></script>
+</head>
+<body>
+    <!-- Consistent Header with Navigation Bar -->
+    <header id="main-header">
+        <h1>Contact</h1>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="expertise.html">Expertise</a></li>
+                <li><a href="experience.html">Work Experience</a></li>
+                <li><a href="daily_life.html">Daily Life</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section with Image and Contact Form -->
+    <main id="contact-page">
+        <!-- Image representing contact -->
+        <div class="contact-image">
+            <h2>Get in Touch</h2>
+            <img src="../contact_visual.png" alt="Contact Visual" width="300">
+        </div>
+
+        <!-- Contact Information -->
+        <p><strong>Reach out to Prabhakar Bugga using the form below or through the provided contact details.</strong></p>
+        <p>If you'd like to reach Prabhakar Bugga for professional inquiries or further questions, feel free to use the contact form below or send an email directly.</p>
+        <p>Email: <a href="mailto:prabhakar.bugga@hcl.com">prabhakar.bugga@hcl.com</a></p>
+        <p>Phone: <a href="tel:+19197577861">+1 919-757-7861</a></p>
+
+        <!-- AJAX-powered contact form for user inquiries -->
+        <form id="contactForm" action="../submit.php" method="post" onsubmit="submitForm(event)">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <!-- Response message displayed after form submission -->
+        <p id="response"></p>
+    </main>
+
+    <!-- Consistent Footer Section -->
+    <footer id="main-footer">
+        <p>&copy; 2024 A Look into a Software Architect</p>
+    </footer>
+</body>
+</html>

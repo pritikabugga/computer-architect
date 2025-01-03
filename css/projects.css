@@ -1,0 +1,38 @@
+/* Adds spacing above the tabs section */
+#project-tabs {
+    margin-top: 20px;
+    text-align: center; /* Center-aligns the entire tabs container */
+}
+
+/* Centers the list and removes default bullet points and padding for tabs */
+#project-tabs ul {
+    list-style-type: none; 
+    padding: 0; 
+    display: inline-flex; /* Inline-flex to center align and keep tabs on the same line */
+    justify-content: center; /* Centers tabs within the container */
+    gap: 10px; /* Adds spacing between tabs */
+}
+
+/* Styles for tab links: background, color, padding, and rounded corners */
+#project-tabs ul li a {
+    background-color: #007bff; /* Primary color for tabs */
+    color: white;
+    padding: 8px 16px; 
+    border-radius: 5px; 
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Changes background color on hover and for the active tab */
+#project-tabs ul li a:hover,
+#project-tabs ul li a.active {
+    background-color: #0056b3; /* Darker shade for active and hover states */
+}
+
+/* Adds padding and border around the content of each tab */
+#project-tabs .tab-content {
+    padding: 15px; 
+    border: 1px solid #ddd; 
+    border-top: none; /* Removes top border to align with tabs */
+    display: none; /* Hide all by default */
+}

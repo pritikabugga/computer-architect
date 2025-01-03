@@ -1,0 +1,63 @@
+/* Lightbox Overlay */
+.lightbox {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+    z-index: 900; /* Lower than footer */
+}
+
+/* Lightbox Content (Image) */
+.lightbox-content {
+    max-width: 90%; /* Adjusts to fit screen size */
+    max-height: 90%;
+}
+
+/* Close Button */
+.close-lightbox {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+/* Gallery Image Container */
+#images-gallery-page a {
+    display: inline-block; /* Ensures each image link is treated as a block */
+    margin: 10px; /* Adjust this value to control the spacing */
+}
+
+/* Optional: Center Align the Gallery */
+#images-gallery-page {
+    text-align: center;
+}
+
+/* Sticky footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #0033cc; /* Adjust to match your footer color */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    z-index: 1000; /* Ensure it stays above the background overlay */
+}
+
+/* Hide Magnific Popup gallery controls */
+.mfp-arrow, /* Left and right arrows */
+.mfp-counter, /* Item counter */
+.mfp-figure .mfp-close, /* Close button */
+.mfp-gallery .mfp-bottom-bar { /* Bottom bar with thumbnails */
+    display: none !important;
+}
+
+

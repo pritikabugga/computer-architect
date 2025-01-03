@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Information and Page Title -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images Gallery - A Look into a Software Architect</title>
+    <link rel="stylesheet" href="../css/style.css"> <!-- Link to external stylesheet for all html files -->
+    <link rel="stylesheet" href="../css/image_gallery.css"> <!-- Stylesheet for image gallery page -->
+    <!-- Fancybox CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+</head>
+<body>
+    <!-- Header Section with Navigation Bar -->
+    <header id="main-header">
+        <h1>Images Gallery</h1>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="expertise.html">Expertise</a></li>
+                <li><a href="experience.html">Work Experience</a></li>
+                <li><a href="daily_life.html">Daily Life</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section for Images Gallery -->
+    <main id="images-gallery-page">
+        <h2>Visual Representation of Daily Tasks</h2>
+        <h3>(Click on an image to view the full picture)</h3>
+
+        <!-- Image Thumbnails Linked to Fancybox Lightbox -->
+        <a href="../checking_emails.gif" data-fancybox="gallery" data-caption="Checking Emails: Navigate system to prioritize tasks and respond to inquiries."> 
+            <img src="../checking_emails_thumb.gif" alt="Checking Emails" width="150"> 
+        </a>
+
+        <a href="../team_meeting.png" data-fancybox="gallery" data-caption="Team Meetings: Participate in daily stand-ups and project discussions.">
+            <img src="../team_meeting_thumb.png" alt="Team Meetings" width="150">
+        </a>
+
+        <a href="../security_review.gif" data-fancybox="gallery" data-caption="Security Review: Analyze vulnerability reports to ensure software security.">
+            <img src="../security_review_thumb.gif" alt="Security Review" width="150">
+        </a>
+    </main>
+
+    <!-- Footer Section -->
+    <footer id="main-footer">
+        <p>&copy; 2024 A Look into a Software Architect</p>
+    </footer>
+
+    <!-- jQuery and Fancybox Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <!-- Custom JavaScript File for Fancybox Initialization -->
+    <script src="../js/image_gallery.js"></script>
+</body>
+</html>
